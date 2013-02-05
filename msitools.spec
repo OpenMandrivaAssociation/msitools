@@ -5,11 +5,11 @@
 %define major	0
 %define libname	%mklibname %{sname} %{major}
 %define girname	%mklibname %{sname}-gir %{api}
-%define devname	%mklibname -d %{name}
+%define devname	%mklibname -d %{sname}
 
 Summary:	Tool to inspect and build Windows Installer (.MSI) files
 Name:		msitools
-Version:	0.90
+Version:	0.91
 Release:	1
 Group:		Development/Databases
 License:	GPLv2+
@@ -66,6 +66,7 @@ Development files for %{name}.
 
 %files 
 %{_bindir}/*
+%{_datadir}/bash-completion/completions/msitools
 
 %files -n %{libname}
 %{_libdir}/lib%{sname}.so.%{major}*
@@ -80,5 +81,5 @@ Development files for %{name}.
 %{_datadir}/gir-1.0/Lib%{sname}-%{api}.gir
 %{_datadir}/vala/vapi/lib%{sname}-%{api}.vapi
 # MD I'm not sure what these are yet
-%{_datadir}/wixl-0.90/include/*.wxi
+%{_datadir}/wixl-%{version}/include/*.wxi
 
