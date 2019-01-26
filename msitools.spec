@@ -57,7 +57,6 @@ Development files for %{name}.
 
 %build
 %configure
-        --disable-static
 
 %make_build
 
