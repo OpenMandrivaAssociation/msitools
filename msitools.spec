@@ -9,8 +9,8 @@
 
 Summary:	Tool to inspect and build Windows Installer (.MSI) files
 Name:		msitools
-Version:	0.91
-Release:	2
+Version:	0.98
+Release:	1
 Group:		Development/Databases
 License:	GPLv2+
 URL:		http://www.gnome.org/
@@ -56,17 +56,17 @@ Development files for %{name}.
 %setup -q
 
 %build
-%configure2_5x \
-        --disable-static
+%configure
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %{_bindir}/*
 %{_datadir}/bash-completion/completions/msitools
+%{_datadir}/locale/*/LC_MESSAGES/msitools.mo
 
 %files -n %{libname}
 %{_libdir}/lib%{sname}.so.%{major}*
