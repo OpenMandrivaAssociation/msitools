@@ -56,17 +56,18 @@ Development files for %{name}.
 %setup -q
 
 %build
-%configure2_5x \
+%configure
         --disable-static
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %{_bindir}/*
 %{_datadir}/bash-completion/completions/msitools
+%{_datadir}/locale/*/LC_MESSAGES/msitools.mo
 
 %files -n %{libname}
 %{_libdir}/lib%{sname}.so.%{major}*
