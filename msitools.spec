@@ -16,6 +16,7 @@ License:	GPLv2+
 URL:		http://www.gnome.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/msitools/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:  bison
 BuildRequires:	intltool
 BuildRequires:	vala-tools
 BuildRequires:	vala-devel
