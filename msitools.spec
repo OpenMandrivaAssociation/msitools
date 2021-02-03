@@ -16,6 +16,7 @@ License:	GPLv2+
 URL:		http://www.gnome.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/msitools/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:  meson
 BuildRequires:  bison
 BuildRequires:	intltool
 BuildRequires:	vala-tools
@@ -57,12 +58,12 @@ Development files for %{name}.
 %setup -q
 
 %build
-%configure
+%meson
 
-%make_build
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %files 
 %{_bindir}/*
