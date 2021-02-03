@@ -9,7 +9,7 @@
 
 Summary:	Tool to inspect and build Windows Installer (.MSI) files
 Name:		msitools
-Version:	0.100
+Version:	0.101
 Release:	1
 Group:		Development/Databases
 License:	GPLv2+
