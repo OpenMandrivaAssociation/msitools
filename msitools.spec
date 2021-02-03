@@ -82,6 +82,7 @@ Development files for %{name}.
 %{_libdir}/pkgconfig/*.pc
 %{_datadir}/gir-1.0/Lib%{sname}-%{api}.gir
 %{_datadir}/vala/vapi/lib%{sname}-%{api}.vapi
+%{_datadir}/vala/vapi/libmsi-%{api}.deps
 # MD I'm not sure what these are yet
 %{_datadir}/wixl-%{version}/include/*.wxi
 
