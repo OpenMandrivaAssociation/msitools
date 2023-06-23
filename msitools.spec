@@ -67,10 +67,13 @@ Development files for %{name}.
 %install
 %meson_install
 
-%files 
+%find_lang %{name} --with-gnome
+
+%files -f %{name}.lang
 %{_bindir}/*
 %{_datadir}/bash-completion/completions/msitools
-%{_datadir}/locale/*/LC_MESSAGES/msitools.mo
+#{_datadir}/locale/*/LC_MESSAGES/msitools.mo
+%{_datadir}/wixl-%{version}/
 
 %files -n %{libname}
 %{_libdir}/lib%{sname}.so.%{major}*
