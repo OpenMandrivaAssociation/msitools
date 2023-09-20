@@ -72,18 +72,17 @@ Development files for %{name}.
 %files -f %{name}.lang
 %{_bindir}/*
 %{_datadir}/bash-completion/completions/msitools
-#{_datadir}/locale/*/LC_MESSAGES/msitools.mo
 %{_datadir}/wixl-%{version}/
 
 %files -n %{libname}
-#{_libdir}/lib%{sname}.so.%{major}*
+%{_libdir}/lib%{sname}-1.0.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Libmsi-%{api}.typelib
 
 %files -n %{devname}
 %{_includedir}/lib%{sname}-%{api}/*
-#{_libdir}/lib%{sname}.so
+%{_libdir}/lib%{sname}-1.0.so
 %{_libdir}/pkgconfig/*.pc
 %{_datadir}/gir-1.0/Lib%{sname}-%{api}.gir
 %{_datadir}/vala/vapi/lib%{sname}-%{api}.vapi
