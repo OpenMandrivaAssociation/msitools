@@ -83,7 +83,7 @@ Development files for %{name}.
 
 %files -n %{devname}
 %{_includedir}/lib%{sname}-%{api}/*
-%{_libdir}/lib%{sname}.so
+#{_libdir}/lib%{sname}.so
 %{_libdir}/pkgconfig/*.pc
 %{_datadir}/gir-1.0/Lib%{sname}-%{api}.gir
 %{_datadir}/vala/vapi/lib%{sname}-%{api}.vapi
