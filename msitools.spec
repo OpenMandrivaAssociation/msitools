@@ -76,7 +76,7 @@ Development files for %{name}.
 %{_datadir}/wixl-%{version}/
 
 %files -n %{libname}
-%{_libdir}/lib%{sname}.so.%{major}*
+#{_libdir}/lib%{sname}.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Libmsi-%{api}.typelib
