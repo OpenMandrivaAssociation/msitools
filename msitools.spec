@@ -12,7 +12,7 @@
 Summary:	Tool to inspect and build Windows Installer (.MSI) files
 Name:		msitools
 Version:	0.103
-Release:	2
+Release:	3
 Group:		Development/Databases
 License:	GPLv2+
 URL:		https://www.gnome.org/
